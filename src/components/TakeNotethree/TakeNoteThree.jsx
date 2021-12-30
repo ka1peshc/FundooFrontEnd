@@ -3,11 +3,12 @@ import ColorPopper from "../ColorPoper/ColorPoper";
 import { ClickAwayListener } from "@mui/material";
 import "./TakeNoteThree.css"
 import Modal from '@mui/material/Modal';
-import {updateNoteAPICall, getArchiveNotesTNT} from "../../services/dataServices"
+import {updateNoteAPICall, getArchiveNotesTNT, updateTrashAPI} from "../../services/dataServices"
 import ArchiveOutlinedIcon from '@mui/icons-material/ArchiveOutlined';
+import DeleteOutlinedIcon from '@mui/icons-material/DeleteOutlined';
 
 
-export default function TakeNoteThree({noteprops,changeColorForTakeNoteThree,listenToArchieve,listenToUpdate}){
+export default function TakeNoteThree({noteprops,changeColorForTakeNoteThree,listenToArchieve,listenToUpdate,listenToTrash}){
     // Model component state hook with open and close method
     const [open, setOpen] = React.useState(false);
     const handleOpen = () => setOpen(true);
@@ -42,7 +43,16 @@ export default function TakeNoteThree({noteprops,changeColorForTakeNoteThree,lis
             console.log(err)
         })
     }
-    
+    // API to update Trash state
+    const updateTrash= () => {
+        console.log(noteprops.noteId)
+        updateTrashAPI(noteprops.noteId).then((response)=>{
+            console.log(response)
+            listenToTrash(true)
+        }).catch((err)=>{
+            console.log(err)
+        })
+    }
     // Get event from tag
     const getNoteTitle= (e) => {
         setUpdateNoteObj({...updateNoteObj,Title:e.target.value});   
@@ -78,8 +88,8 @@ export default function TakeNoteThree({noteprops,changeColorForTakeNoteThree,lis
                         <div className="greyBG">
                             <img alt="reminder" src="https://img.icons8.com/material-outlined/24/000000/add-reminder.png"/>
                         </div>
-                        <div className="greyBG">
-                            <img alt="collaborator" src="https://img.icons8.com/material-outlined/24/000000/add-user-male.png"/>
+                        <div className="greyBG" onClick={updateTrash}>
+                            <DeleteOutlinedIcon />
                         </div>
                         <div className="greyBG">
                             <ColorPopper action="update" 

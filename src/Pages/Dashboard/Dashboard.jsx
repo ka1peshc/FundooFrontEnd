@@ -36,6 +36,13 @@ function Dashboard(){
             getNotesfn();
         }
     } 
+    // Trash for take note 3
+    const listenToTrash = (data) => {
+        console.log(data)
+        if (data === true){
+            getNotesfn();
+        }
+    }
     //Archive list for Nav
     const getArchiveNotesfn = ()=>{
         getArchiveNotes().then(response => { 
@@ -80,11 +87,13 @@ function Dashboard(){
             getNotesfn();
         }
     }
+    // List of notes to be passed
     const NotesList = noteList.map(note => <TakeNoteThree noteprops={note} 
         key={note.noteId} 
         changeColorForTakeNoteThree={getNotesfn} 
         listenToArchieve={listenToArchieve}
-        listenToUpdate={listenToUpdate}/>)
+        listenToUpdate={listenToUpdate}
+        listenToTrash={listenToTrash}/>)
 
     // Toggle between Take note1 and take note2
     const listenToTakeNote1 = data => {

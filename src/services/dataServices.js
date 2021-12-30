@@ -20,9 +20,12 @@ export const updateColor = async(obj) => {
     let response = await axios.put(`https://localhost:44394/api/editColor?noteId=${parseInt(obj.noteId)}&noteColor=${obj.color}`,config)
     return response
 }
-
 export const updateNoteAPICall = async(obj) => {
     let response = await axios.put("https://localhost:44394/api/editnote",obj,config);
+    return response
+}
+export const updateTrashAPI = async(obj) => {
+    let response = await axios.put(`https://localhost:44394/api/editIsTrash?noteId=${obj}`,config)
     return response
 }
 
