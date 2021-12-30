@@ -1,0 +1,19 @@
+.colors{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    padding:3px;
+    background-color: gray;
+    box-shadow: 0 0 3px #ccc;
+    width:35%;
+    height: auto;
+    position: relative;
+    left: 100px;
+}
+.poperDivCircle{
+    border-radius: 50%;
+    height: 22px;
+    width: 22px;
+    margin:3px;
+}

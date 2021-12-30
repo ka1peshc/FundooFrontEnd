@@ -1,0 +1,46 @@
+.DB_wrapper{
+    display: flex;
+    flex-direction: column;
+    border: none;
+    outline : none;
+    box-sizing: border-box;
+    width: 100%;
+    /* overflow-y: hidden;
+  overflow-x: hidden; */
+}
+.DB_MainContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
+}
+.DB_Drawer{
+    width: 20%;
+    margin-top: 50px;
+    
+}
+.DB_noteContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    padding-top: 20px;
+    /* position: relative;
+    left: 200px; */
+}
+.DB_TakeNotes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.DB_DisplayNotes{
+    margin-top: 20px;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width:100%
+    
+}
+

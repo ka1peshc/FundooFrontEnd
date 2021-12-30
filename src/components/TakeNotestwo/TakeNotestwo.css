@@ -1,0 +1,97 @@
+.main_content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+}
+.takeNote2{
+    display: flex;
+    flex-direction: flex-start;
+    gap: 10px;
+    width:40%;
+    height: auto;
+    border-radius: 8px;
+    background-color: transparent;
+    box-shadow: 0 0 3px #ccc;
+    
+}
+.titleSection{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 5vh;
+    
+}
+.takeNote2_txtTitle{
+    width: 90%;
+}
+
+.noteBody{
+    width: 90%;  
+}
+.takenotetwo_txtArea{
+    width: 100%;
+    height: auto;
+}
+.pinImage{
+    width: 1.5em;
+    height: 1.5em;
+    margin-right: 2em
+}
+.noteBody{
+    width: 100%; 
+}
+.txtBody{
+    width: 90%;
+    height: 100%;
+    font-size: large;
+}
+.takenotetwo_txtTitlem{
+    width: 80%;
+    border:none;
+    outline: none;
+}
+.takenotetwo{
+    width: 100%;
+    border:none;
+    outline: none;
+    background-color: transparent;
+}
+
+.AddFunctionality{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 0;
+    margin-bottom: 1%;
+    width: 100%;
+}
+.functions{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 60%;
+    
+}
+.clossButton{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-right: 2%;
+    width: 10%;
+}
+.closebtn{
+    border: none;
+    height: 100%;
+    background-color: transparent;
+    cursor:pointer;
+}
+.greyBG{
+    cursor:pointer;
+}
+.greyBG:hover{
+    background-color: #ccc;
+    border-radius: 50%;
+}

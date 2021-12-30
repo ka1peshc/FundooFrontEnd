@@ -1,0 +1,78 @@
+.NoteContainer{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    min-height: 17vh;
+    width: 22%;
+    justify-content: space-around;
+    box-shadow: 0 0 4px #ccc;
+    padding-left: 5px;
+    margin: 10px;
+}
+.Model-NoteContainer{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    justify-content: flex-start;
+    position: relative;
+    padding-left: 5px;
+    margin: 10px;
+    top:25%;
+    left:40%;
+}
+.NoteTitle{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left:10px;
+}
+.NoteBody{
+    display: flex;
+    justify-content: flex-start;
+    margin-left:10px;
+}
+.tnt_txtTitle, .tnt_notebody{
+    border:none;
+    outline:none;
+}
+
+.NoteThreeContainer {
+    width: 100%;
+    visibility: hidden;
+}
+.tntNoteOptions{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.NoteContainer:hover .NoteThreeContainer{
+    visibility: visible;
+}
+.updateNoteBtn{
+    border:none;
+    align-items: center;
+}
+.tnt_notebody, .tnt_txtTitle{
+    width: 100%;
+    background-color: transparent;
+    border:none;
+    outline: none;
+}
+.Model-takeNote2{
+    position: relative;
+    top:30%;
+    left: 40%;
+    width:40%;
+    
+    /* height: auto;
+    border-radius: 8px;
+    background-color: transparent;
+    box-shadow: 0 0 3px #ccc; */
+}
+
+
+
+
+

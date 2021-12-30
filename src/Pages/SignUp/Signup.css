@@ -1,0 +1,120 @@
+.bodyContainer{
+    margin:0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    
+}
+.mainSignupContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 50%;
+    height: 90%;
+    border-radius: 4px;
+    box-shadow: 0 0 5px grey;
+}
+.signupContainer{
+    width: 60%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start; 
+    margin-top:20px;
+}
+.Header{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.googleLogo{
+    float: left;
+}
+
+.nameErrorContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+}
+.nameErrorMsg{
+    margin-left: 20px;
+}
+.nameContainer, .password{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.emailContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 20px;
+}
+.emailTextbox{
+    width: 100%;
+}
+.emailBtn{
+    border:none;
+    outline: none;
+}
+.passwordContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+/* .password{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
+} */
+.confirmpass{
+    margin-left: 12px;
+}
+.passwordNote{
+    margin-left: 20px;
+}
+.showCheckbox{
+    margin-left: 20px;
+}
+
+.btnContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.nextbtn{
+    margin-right: 30px;
+    border-radius: 3px;
+}
+.signinbtn{
+    border:none;
+    outline: none;
+}
+.imageContainer{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.googleImage{
+    width: 100%;
+}
+
+small{
+    color: black;
+}
+.errorMsg{
+    color:red;
+}
